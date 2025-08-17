@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        #con1 {
+            width: 350px;
+        }
+        #con2 {
+            width: 400px;
+        }
+
+        .inputBox {
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        #inputResult {
+            margin-top: 10px;
+            font-family: monospace;
+        }
+    </style>
+    <script src="options.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="con1">
+            <p id="importJSON">Import JSON with shortcuts:</p>
+            <div class="inputBox">
+                <input type="file" id="jsonFile" accept=".json"/>
+                <div id="inputResult"></div>
+            </div>
+            <div id="newCommands">
+                <p>Adding new commands:</p>
+                <div class="inputBox">
+                    <p>Category:</p>
+                    <input style="width: 300px;" id="newCat"/>
+                    <p>Command:</p>
+                    <input style="width: 300px;" id="newCmd"/>
+                    <p>Text:</p>
+                    <input style="width: 300px;" id="newText"/>
+                    <button id="newButton">Add</button>
+                </div>
+            </div>
+        </div>
+        <div id="con2">
+
+        </div>
+    </div>
+</body>
+</html>
